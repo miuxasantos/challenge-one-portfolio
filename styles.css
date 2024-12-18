@@ -1,0 +1,393 @@
+:root{
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- body e gerais ----- */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--cor-de-fundo);
+    line-height: 1.6;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ol, ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* header */
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background-color: aliceblue;
+    justify-content: space-between;
+}
+
+.titulo__pagina {
+    align-items: left;
+    font-size: 1.2rem;
+}
+
+.lista__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.elemento__nav {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* apresentacao */
+.apresentacao {
+    padding: 42px;
+}
+
+.apresentacao__titulo {
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.container__apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__texto {
+    gap: 10px;
+}
+
+.imagem__apresentacao {
+    max-width: 50vh;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    padding: 32px;
+}
+
+.icon {
+    width: 40px;
+}
+
+/* sobre mim */
+
+.sobre__mim {
+    padding: 42px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+
+.sobre__mim__titulo {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.imagem__sobre__mim {
+    max-width: 50vh;
+    border-radius: 20px;
+}
+
+/* skills */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 32px 0px;
+}
+
+
+.lista__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around left;
+    margin: 32px;
+    align-items: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.lista__skills__elemento {
+    background-color:#c9b1ee;
+    padding: 30px;
+    width: 136px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.skills__icon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.skills p {
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    word-wrap: normal;
+}
+
+/* hobbies */
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hobbies h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 32px 0px;
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.hobbies__lista__elemento {
+    text-align: center;
+    background-color: #e3b6ec;
+    border-radius: 20px;
+    padding: 24px;
+    width: 136px;
+    height: 120px;
+}
+
+.hobbies__icon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.hobbies p {
+    padding-top: 4px;
+}
+
+/* formação acadêmica */
+
+.formacao {
+    padding: 42px;
+    background-color: aliceblue;
+}
+
+.formacao h2 {
+    font-size: 32px;
+    padding-bottom: 24px;
+}
+
+.formacao__imagem {
+    max-height: 200px;
+    max-width: 300px;
+    object-fit: contain; 
+}
+
+.formacao__lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.formacao__lista__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacao__lista__div {
+    padding: 32px;
+    text-align: center;
+}
+
+/* projetos */
+
+.projetos {
+    padding: 64px;
+}
+
+.projetos h2 {
+    font-size: 32px;
+}
+
+.projetos__lista__elemento {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 74px 0px; 
+}
+
+.projetos__lista__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.projetos__botao {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    background-color: #b3c9c1;
+    padding: 12px 16px;
+    border-radius: 6px;
+    text-align: center;
+}
+.projetos__lista__elemento img {
+    width: 612px;
+    object-fit: contain;
+}
+
+/* contato */
+
+.contato {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contato h2 {
+    padding-bottom: 16px;
+}
+
+.form__contato {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 656px;
+    border-radius: 4px;
+}
+
+.form__contato__input {
+    padding: 16px 4px;
+    border: 0;
+    background-color: #c9b1ee;
+    border-radius: 20px;
+}
+.form__contato__input::placeholder {
+    color: black;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.form__botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato__botao {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    background-color: #b3c9c1;
+    padding: 12px 16px;
+    max-width: fit-content;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* footer */
+
+.rodape {
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsividade */
+
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .lista__nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .elemento__nav a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+
+@media (min-width: 1024px) {
+
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .elemento__nav a {
+        font-size: 1.1rem;
+    }
+}
